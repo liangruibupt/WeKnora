@@ -1,7 +1,7 @@
 # =========================
 # 构建阶段（轻量化：仅文档解析 + 图片提取，无 OCR/VLM）
 # =========================
-FROM python:3.10.18-bookworm AS builder
+FROM python:3.11.17-bookworm AS builder
 
 ARG APT_MIRROR=""
 RUN if [ -n "$APT_MIRROR" ]; then \
@@ -79,7 +79,7 @@ RUN chmod +x docreader/scripts/generate_proto.sh && \
 # =========================
 # 运行阶段（轻量化）
 # =========================
-FROM python:3.10.18-bookworm AS runner
+FROM python:3.11.17-bookworm AS runner
 
 ARG APT_MIRROR=""
 RUN if [ -n "$APT_MIRROR" ]; then \
