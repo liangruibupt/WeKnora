@@ -3,7 +3,7 @@ name = "docreader"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10.18"
+requires-python = ">=3.11"
 dependencies = [
     "beautifulsoup4>=4.14.2",
     "ebooklib>=0.18",
@@ -17,7 +17,7 @@ dependencies = [
     "openpyxl>=3.1.0",
     "pandas>=2.0.0",
     "xlrd>=2.0.0",
-    "pillow>=12.2.0",
+    "pillow>=13.0.0",
     "playwright>=1.55.0",
     "protobuf>=6.33.5",
     "pydantic>=2.13.4",
